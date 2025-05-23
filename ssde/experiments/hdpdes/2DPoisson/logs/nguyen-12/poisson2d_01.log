@@ -1,0 +1,97 @@
+2025-03-19 15:35:13,025 - INFO - The threshold of evaluation is:
+2025-03-19 15:35:13,025 - INFO - 1e-07
+2025-03-19 15:35:13,151 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-03-19 15:35:13,152 - INFO - /home/weishu/symRegression/SSDE/ssde/ssde/prior.py:959: RuntimeWarning: divide by zero encountered in log
+  self.logit_adjust[tokens] -= np.log(len(tokens))
+
+2025-03-19 15:35:13,152 - INFO - -- BUILDING PRIOR START -------------
+2025-03-19 15:35:13,152 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'InverseUnaryConstraint' with arguments {}. Reason: There are no inverse unary Token pairs in the Library.
+WARNING: Skipping invalid 'TrigConstraint' with arguments {}. Reason: There are no target Tokens.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-03-19 15:35:13,152 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 2 times.
+ConstConstraint: [const] cannot be the only unique child of [add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-03-19 15:35:13,152 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-03-19 15:35:13,153 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-03-19 15:35:35,469 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:36:53,357 - INFO - [00:00:01:17.89] Training iteration 1, current best R: 0.3310
+2025-03-19 15:36:53,358 - INFO - 
+	** New best
+2025-03-19 15:36:53,358 - INFO - 	Reward: 0.3309801810403482
+2025-03-19 15:36:53,358 - INFO - 	Count Off-policy: 0
+2025-03-19 15:36:53,358 - INFO - 	Count On-policy: 1
+2025-03-19 15:36:53,358 - INFO - 	Originally on Policy: True
+2025-03-19 15:36:53,358 - INFO - 	Invalid: False
+2025-03-19 15:36:53,358 - INFO - 	Traversal: add,add,Nxexpr,mul,add,-2.0,mul,x1,mul,div,x1,mul,x1,x1,mul,x1,mul,x1,x1,x1,x1
+2025-03-19 15:36:53,358 - INFO - 	Expression:
+2025-03-19 15:36:53,544 - INFO - 	              ⎛  3      ⎞     
+	  Nxexpr + x₁⋅⎝x₁  - 2.0⎠ + x₁
+
+2025-03-19 15:36:53,555 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:37:04,573 - INFO - [00:00:00:11.02] Training iteration 2, current best R: 0.5291
+2025-03-19 15:37:04,573 - INFO - 
+	** New best
+2025-03-19 15:37:04,573 - INFO - 	Reward: 0.5291441059574982
+2025-03-19 15:37:04,573 - INFO - 	Count Off-policy: 0
+2025-03-19 15:37:04,573 - INFO - 	Count On-policy: 1
+2025-03-19 15:37:04,573 - INFO - 	Originally on Policy: True
+2025-03-19 15:37:04,573 - INFO - 	Invalid: False
+2025-03-19 15:37:04,574 - INFO - 	Traversal: add,sub,add,Nxexpr,x1,x1,mul,mul,mul,x1,add,mul,x1,x1,add,-4.2702703,x1,x1,x1
+2025-03-19 15:37:04,574 - INFO - 	Expression:
+2025-03-19 15:37:04,583 - INFO - 	             3 ⎛  2                 ⎞
+	  Nxexpr + x₁ ⋅⎝x₁  + x₁ - 4.2702703⎠
+
+2025-03-19 15:37:04,591 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:37:14,454 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:37:24,106 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:37:34,597 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:37:43,691 - INFO - [00:00:00:09.09] Training iteration 6, current best R: 0.9916
+2025-03-19 15:37:43,691 - INFO - 
+	** New best
+2025-03-19 15:37:43,691 - INFO - 	Reward: 0.991628462236333
+2025-03-19 15:37:43,691 - INFO - 	Count Off-policy: 0
+2025-03-19 15:37:43,691 - INFO - 	Count On-policy: 1
+2025-03-19 15:37:43,691 - INFO - 	Originally on Policy: True
+2025-03-19 15:37:43,691 - INFO - 	Invalid: False
+2025-03-19 15:37:43,691 - INFO - 	Traversal: add,Nxexpr,sub,sub,x1,mul,x1,mul,x1,add,mul,x1,div,-6.0,x1,x1,x1
+2025-03-19 15:37:43,691 - INFO - 	Expression:
+2025-03-19 15:37:43,696 - INFO - 	             2           
+	  Nxexpr - x₁ ⋅(x₁ - 6.0)
+
+2025-03-19 15:37:43,704 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 15:37:58,227 - INFO - Const Pruning Optimization ......
+2025-03-19 15:38:02,529 - INFO - [00:00:00:18.83] Training iteration 7, current best R: 1.0000
+2025-03-19 15:38:02,529 - INFO - 
+	** New best
+2025-03-19 15:38:02,529 - INFO - 	Reward: 0.9999902398353195
+2025-03-19 15:38:02,529 - INFO - 	Count Off-policy: 0
+2025-03-19 15:38:02,529 - INFO - 	Count On-policy: 1
+2025-03-19 15:38:02,529 - INFO - 	Originally on Policy: True
+2025-03-19 15:38:02,529 - INFO - 	Invalid: False
+2025-03-19 15:38:02,530 - INFO - 	Traversal: sub,Nxexpr,mul,0.5,mul,mul,x1,add,sub,x1,mul,x1,div,mul,add,x1,x1,x1,x1,x1,x1
+2025-03-19 15:38:02,530 - INFO - 	Expression:
+2025-03-19 15:38:02,539 - INFO - 	                 2 ⎛      2       ⎞
+	  Nxexpr - 0.5⋅x₁ ⋅⎝- 2⋅x₁  + 2⋅x₁⎠
+
+2025-03-19 15:38:02,551 - INFO - [00:00:00:18.85] Early stopping criteria met; breaking early.
+2025-03-19 15:38:04,050 - INFO - Invalid expressions: 252 of 3500 (7.2%).
+2025-03-19 15:38:04,050 - INFO - Error type counts:
+2025-03-19 15:38:04,050 - INFO -   true_divide: 238 (94.4%)
+2025-03-19 15:38:04,050 - INFO -   None: 14 (5.6%)
+2025-03-19 15:38:04,050 - INFO - Error node counts:
+2025-03-19 15:38:04,050 - INFO -   divide: 233 (92.5%)
+2025-03-19 15:38:04,050 - INFO -   None: 14 (5.6%)
+2025-03-19 15:38:04,050 - INFO -   invalid: 5 (2.0%)
+2025-03-19 15:38:04,050 - INFO - Time used(s): 176.5882625579834
+2025-03-19 15:38:04,051 - INFO - Identified var x1's parametirc expression:
+2025-03-19 15:38:04,051 - INFO - Nxexpr - 0.5*x1**2*(-2*x1**2 + 2*x1)
+2025-03-19 15:38:04,052 - INFO - Identified var x1's traversal:
+2025-03-19 15:38:04,052 - INFO - [sub, Nxexpr, mul, 0.5, mul, mul, x1, add, sub, x1, mul, x1, div, mul, add, x1, x1, x1, x1, x1, x1]

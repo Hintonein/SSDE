@@ -1,0 +1,75 @@
+2025-03-19 10:04:50,166 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-03-19 10:04:50,167 - INFO - -- BUILDING PRIOR START -------------
+2025-03-19 10:04:50,167 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-03-19 10:04:50,167 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, exp, log, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-03-19 10:04:50,167 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-03-19 10:04:50,168 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-03-19 10:04:52,656 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:05:56,271 - INFO - [00:00:01:03.61] Training iteration 1, current best R: 0.5579
+2025-03-19 10:05:56,271 - INFO - 
+	** New best
+2025-03-19 10:05:56,271 - INFO - 	Reward: 0.5579186931083366
+2025-03-19 10:05:56,271 - INFO - 	Count Off-policy: 1
+2025-03-19 10:05:56,271 - INFO - 	Count On-policy: 0
+2025-03-19 10:05:56,271 - INFO - 	Originally on Policy: False
+2025-03-19 10:05:56,271 - INFO - 	Invalid: False
+2025-03-19 10:05:56,272 - INFO - 	Traversal: mul,x1,sub,x1,sub,mul,sub,mul,-0.24108751,mul,div,exp,x1,div,x1,x1,exp,x1,x1,x1,mul,x1,x1
+2025-03-19 10:05:56,272 - INFO - 	Expression:
+2025-03-19 10:05:56,464 - INFO - 	     ⎛  2      ⎛                  2⋅x₁⎞     ⎞
+	  x₁⋅⎝x₁  - x₁⋅⎝-x₁ - 0.24108751⋅ℯ    ⎠ + x₁⎠
+
+2025-03-19 10:05:56,466 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:06:38,376 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:07:21,530 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:08:03,575 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:08:45,221 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:09:28,516 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:10:10,169 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:10:53,323 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:11:34,492 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:12:15,616 - INFO - [00:00:00:41.12] Training iteration 10, current best R: 0.5579
+2025-03-19 10:12:15,617 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:12:58,694 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:13:38,490 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:14:18,045 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:15:01,192 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:15:44,215 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:16:26,856 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 10:17:08,695 - INFO - [00:00:00:41.84] Training iteration 17, current best R: 1.0000
+2025-03-19 10:17:08,695 - INFO - 
+	** New best
+2025-03-19 10:17:08,695 - INFO - 	Reward: 0.999999343023942
+2025-03-19 10:17:08,695 - INFO - 	Count Off-policy: 1
+2025-03-19 10:17:08,695 - INFO - 	Count On-policy: 0
+2025-03-19 10:17:08,695 - INFO - 	Originally on Policy: False
+2025-03-19 10:17:08,695 - INFO - 	Invalid: False
+2025-03-19 10:17:08,695 - INFO - 	Traversal: add,sub,mul,x1,x1,0.0,add,mul,mul,add,mul,mul,x1,x1,x1,add,mul,x1,x1,x1,x1,x1,x1
+2025-03-19 10:17:08,695 - INFO - 	Expression:
+2025-03-19 10:17:08,700 - INFO - 	    2 ⎛  3     2     ⎞     2     
+	  x₁ ⋅⎝x₁  + x₁  + x₁⎠ + x₁  + x₁
+
+2025-03-19 10:17:08,702 - INFO - [00:00:00:41.85] Early stopping criteria met; breaking early.
+2025-03-19 10:17:13,016 - INFO - Invalid expressions: 8067 of 40886 (19.7%).
+2025-03-19 10:17:13,016 - INFO - Error type counts:
+2025-03-19 10:17:13,016 - INFO -   None: 8067 (100.0%)
+2025-03-19 10:17:13,016 - INFO - Error node counts:
+2025-03-19 10:17:13,016 - INFO -   None: 8067 (100.0%)
+2025-03-19 10:17:13,017 - INFO - Using time(s):
+2025-03-19 10:17:13,017 - INFO - 744.3469092845917
+2025-03-19 10:17:13,017 - INFO - Identified parametirc expression:
+2025-03-19 10:17:13,018 - INFO - x1**2*(x1**3 + x1**2 + x1) + x1**2 + x1
+2025-03-19 10:17:13,018 - INFO - Identified traversal:
+2025-03-19 10:17:13,018 - INFO - [add, sub, mul, x1, x1, 0.0, add, mul, mul, add, mul, mul, x1, x1, x1, add, mul, x1, x1, x1, x1, x1, x1]

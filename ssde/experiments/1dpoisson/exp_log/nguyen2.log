@@ -1,0 +1,641 @@
+
+== EXPERIMENT SETUP START ===========
+Task type            : solver
+Starting seed        : 500
+Runs                 : 20
+Additional context   :
+      INFO: Replacing config seed 0 with command-line seed 500.
+      INFO: Setting 'verbose' to False for parallelized run.
+      INFO: Setting 'n_cores_batch' to 1 to avoid nested child processes.
+      INFO: Setting 'parallel_eval' to 'False' as we are already parallelizing.
+== EXPERIMENT SETUP END =============
+
+== TRAINING SEED 512 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.29] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_512_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_512_pf.csv
+Invalid expressions: 1354 of 7233 (18.7%).
+Error type counts:
+  None: 1354 (100.0%)
+Error node counts:
+  None: 1354 (100.0%)
+== TRAINING SEED 512 END ==============
+
+== TRAINING SEED 502 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.32] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_502_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_502_pf.csv
+Invalid expressions: 1840 of 9646 (19.1%).
+Error type counts:
+  None: 1840 (100.0%)
+Error node counts:
+  None: 1840 (100.0%)
+== TRAINING SEED 502 END ==============
+
+== TRAINING SEED 505 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.14] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_505_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_505_pf.csv
+Invalid expressions: 2297 of 12041 (19.1%).
+Error type counts:
+  None: 2297 (100.0%)
+Error node counts:
+  None: 2297 (100.0%)
+== TRAINING SEED 505 END ==============
+
+== TRAINING SEED 506 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.51] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_506_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_506_pf.csv
+Invalid expressions: 2755 of 14425 (19.1%).
+Error type counts:
+  None: 2755 (100.0%)
+Error node counts:
+  None: 2755 (100.0%)
+== TRAINING SEED 506 END ==============
+
+== TRAINING SEED 507 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.38] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_507_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_507_pf.csv
+Invalid expressions: 3660 of 19144 (19.1%).
+Error type counts:
+  None: 3660 (100.0%)
+Error node counts:
+  None: 3660 (100.0%)
+== TRAINING SEED 507 END ==============
+
+== TRAINING SEED 513 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:04.86] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_513_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_513_pf.csv
+Invalid expressions: 3146 of 16955 (18.6%).
+Error type counts:
+  None: 3146 (100.0%)
+Error node counts:
+  None: 3146 (100.0%)
+== TRAINING SEED 513 END ==============
+
+== TRAINING SEED 511 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.03] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_511_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_511_pf.csv
+Invalid expressions: 4367 of 24102 (18.1%).
+Error type counts:
+  None: 4367 (100.0%)
+Error node counts:
+  None: 4367 (100.0%)
+== TRAINING SEED 511 END ==============
+
+== TRAINING SEED 504 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.37] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_504_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_504_pf.csv
+Invalid expressions: 5164 of 26375 (19.6%).
+Error type counts:
+  None: 5164 (100.0%)
+Error node counts:
+  None: 5164 (100.0%)
+== TRAINING SEED 504 END ==============
+
+== TRAINING SEED 519 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.47] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_519_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_519_pf.csv
+Invalid expressions: 7663 of 40902 (18.7%).
+Error type counts:
+  None: 7663 (100.0%)
+Error node counts:
+  None: 7663 (100.0%)
+== TRAINING SEED 519 END ==============
+
+== TRAINING SEED 515 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.58] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_515_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_515_pf.csv
+Invalid expressions: 7397 of 38315 (19.3%).
+Error type counts:
+  None: 7397 (100.0%)
+Error node counts:
+  None: 7397 (100.0%)
+== TRAINING SEED 515 END ==============
+
+== TRAINING SEED 518 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.13] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_518_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_518_pf.csv
+Invalid expressions: 9790 of 52693 (18.6%).
+Error type counts:
+  None: 9790 (100.0%)
+Error node counts:
+  None: 9790 (100.0%)
+== TRAINING SEED 518 END ==============
+
+== TRAINING SEED 517 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.96] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_517_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_517_pf.csv
+Invalid expressions: 10955 of 57604 (19.0%).
+Error type counts:
+  None: 10955 (100.0%)
+Error node counts:
+  None: 10955 (100.0%)
+== TRAINING SEED 517 END ==============
+
+== TRAINING SEED 508 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.88] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_508_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_508_pf.csv
+Invalid expressions: 12565 of 64882 (19.4%).
+Error type counts:
+  None: 12565 (100.0%)
+Error node counts:
+  None: 12565 (100.0%)
+== TRAINING SEED 508 END ==============
+
+== TRAINING SEED 501 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.49] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_501_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_501_pf.csv
+Invalid expressions: 13322 of 74222 (17.9%).
+Error type counts:
+  None: 13322 (100.0%)
+Error node counts:
+  None: 13322 (100.0%)
+== TRAINING SEED 501 END ==============
+
+== TRAINING SEED 503 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.31] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_503_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_503_pf.csv
+Invalid expressions: 15249 of 83507 (18.3%).
+Error type counts:
+  None: 15249 (100.0%)
+Error node counts:
+  None: 15249 (100.0%)
+== TRAINING SEED 503 END ==============
+
+== TRAINING SEED 510 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:02.63] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_510_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_510_pf.csv
+Invalid expressions: 14993 of 86441 (17.3%).
+Error type counts:
+  None: 14993 (100.0%)
+Error node counts:
+  None: 14993 (100.0%)
+== TRAINING SEED 510 END ==============
+
+== TRAINING SEED 500 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:03.43] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_500_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_500_pf.csv
+Invalid expressions: 19750 of 105511 (18.7%).
+Error type counts:
+  None: 19750 (100.0%)
+Error node counts:
+  None: 19750 (100.0%)
+== TRAINING SEED 500 END ==============
+
+== TRAINING SEED 509 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:03.17] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_509_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_509_pf.csv
+Invalid expressions: 19516 of 103380 (18.9%).
+Error type counts:
+  None: 19516 (100.0%)
+Error node counts:
+  None: 19516 (100.0%)
+== TRAINING SEED 509 END ==============
+
+== TRAINING SEED 514 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:03.65] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_514_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_514_pf.csv
+Invalid expressions: 26843 of 150936 (17.8%).
+Error type counts:
+  None: 26843 (100.0%)
+Error node counts:
+  None: 26843 (100.0%)
+== TRAINING SEED 514 END ==============
+
+== TRAINING SEED 516 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, log, exp, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+[00:00:00:03.66] Early stopping criteria met; breaking early.
+Saving Hall of Fame to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_516_hof.csv
+Saving Pareto Front to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_516_pf.csv
+Invalid expressions: 26191 of 156069 (16.8%).
+Error type counts:
+  None: 26191 (100.0%)
+Error node counts:
+  None: 26191 (100.0%)
+== TRAINING SEED 516 END ==============
+INFO: Completed run 1 of 20 in 24 s
+INFO: Completed run 2 of 20 in 27 s
+INFO: Completed run 3 of 20 in 32 s
+INFO: Completed run 4 of 20 in 32 s
+INFO: Completed run 5 of 20 in 35 s
+INFO: Completed run 6 of 20 in 36 s
+INFO: Completed run 7 of 20 in 40 s
+INFO: Completed run 8 of 20 in 46 s
+INFO: Completed run 9 of 20 in 58 s
+INFO: Completed run 10 of 20 in 58 s
+INFO: Completed run 11 of 20 in 74 s
+INFO: Completed run 12 of 20 in 76 s
+INFO: Completed run 13 of 20 in 92 s
+INFO: Completed run 14 of 20 in 97 s
+INFO: Completed run 15 of 20 in 107 s
+INFO: Completed run 16 of 20 in 121 s
+INFO: Completed run 17 of 20 in 138 s
+INFO: Completed run 18 of 20 in 143 s
+INFO: Completed run 19 of 20 in 220 s
+INFO: Completed run 20 of 20 in 246 s
+
+== POST-PROCESS START =================
+-- LOADING LOGS START ----------------
+Successfully loaded summary data
+Successfully loaded Hall of Fame data
+Successfully loaded Pareto Front data
+-- LOADING LOGS END ------------------
+
+-- ANALYZING LOG START --------------
+Task_____________solver
+Source path______./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223
+Runs_____________20
+Max Samples/run__2000000
+Success_rate_____1.0
+Hall of Fame (Top 5 of 2000)____
+    0: S=510 R=1.000000 <-- (x1**2 + 1.0)*(x1**2 + x1)
+    1: S=507 R=1.000000 <-- -x1**2*(x1*(-x1 - 0.9999999817675872/x1) - x1) + x1
+    2: S=510 R=1.000000 <-- (x1**2 + 1.0)*(x1**2 + x1)
+    3: S=507 R=1.000000 <-- -x1**2*(x1*(-x1 - 0.9999999878450581/x1) - x1) + x1
+    4: S=513 R=1.000000 <-- x1*(1.0*x1*(x1**2 + x1) + x1 + 1)
+  Saving Hall of Fame plot to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_plot_hof.png
+Pareto Front (5 of 11)____
+    0: S=507 R=1.000000 C=18.00 <-- -x1**2*(x1*(-x1 - 0.9999999817675872/x1) - x1) + x1
+    1: S=507 R=1.000000 C=16.00 <-- -x1**2*(x1*(-x1 - 0.9999999878450581/x1) - x1) + x1
+    2: S=518 R=1.000000 C=15.00 <-- x1*(x1*(x1**2 + x1) + x1) + x1
+    3: S=508 R=1.000000 C=14.00 <-- x1*(x1 + 1.0)*(x1**2 + 1)
+    4: S=513 R=0.460877 C=13.00 <-- x1*(x1 + 0.28643414)*(x1**2 + x1) + x1
+  Saving Pareto Front plot to ./log/solver_experiments_1dpoisson_benchdata_nguyen-2_2025-03-30-130223/ssde_solver_experiments_1dpoisson_benchdata_nguyen-2_plot_pf.png
+-- ANALYZING LOG END ----------------
+== POST-PROCESS END ===================

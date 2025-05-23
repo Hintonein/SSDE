@@ -1,0 +1,57 @@
+2025-02-21 15:24:37,006 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-02-21 15:24:37,007 - INFO - -- BUILDING PRIOR START -------------
+2025-02-21 15:24:37,007 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-02-21 15:24:37,007 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, exp, log, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-02-21 15:24:37,007 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-02-21 15:24:37,008 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-02-21 15:24:38,885 - INFO - GP Controller using parallel evaluation
+2025-02-21 15:24:39,305 - INFO - 	>>> Using 64 processes
+2025-02-21 15:24:39,393 - INFO - -- RUNNING ITERATIONS START -------------
+2025-02-21 15:24:46,667 - INFO - [00:00:00:07.27] Training iteration 1, current best R: 0.9525
+2025-02-21 15:24:46,667 - INFO - 
+	** New best
+2025-02-21 15:24:46,667 - INFO - 	Reward: 0.9525127181380516
+2025-02-21 15:24:46,667 - INFO - 	Count Off-policy: 1
+2025-02-21 15:24:46,667 - INFO - 	Count On-policy: 0
+2025-02-21 15:24:46,667 - INFO - 	Originally on Policy: False
+2025-02-21 15:24:46,667 - INFO - 	Invalid: False
+2025-02-21 15:24:46,668 - INFO - 	Traversal: sin,add,0.061876975,x1
+2025-02-21 15:24:46,668 - INFO - 	Expression:
+2025-02-21 15:24:46,677 - INFO - 	  sin(x₁ + 0.061876975)
+
+2025-02-21 15:24:46,678 - INFO - -- RUNNING ITERATIONS START -------------
+2025-02-21 15:24:50,087 - INFO - [00:00:00:03.41] Training iteration 2, current best R: 1.0000
+2025-02-21 15:24:50,088 - INFO - 
+	** New best
+2025-02-21 15:24:50,088 - INFO - 	Reward: 0.9999997400151267
+2025-02-21 15:24:50,088 - INFO - 	Count Off-policy: 1
+2025-02-21 15:24:50,088 - INFO - 	Count On-policy: 0
+2025-02-21 15:24:50,088 - INFO - 	Originally on Policy: False
+2025-02-21 15:24:50,088 - INFO - 	Invalid: False
+2025-02-21 15:24:50,088 - INFO - 	Traversal: div,sin,x1,add,0.84147036,sub,x1,x1
+2025-02-21 15:24:50,088 - INFO - 	Expression:
+2025-02-21 15:24:50,232 - INFO - 	  1.1883959881843⋅sin(x₁)
+
+2025-02-21 15:24:50,233 - INFO - [00:00:00:03.55] Early stopping criteria met; breaking early.
+2025-02-21 15:24:50,589 - INFO - Invalid expressions: 1256 of 4791 (26.2%).
+2025-02-21 15:24:50,590 - INFO - Error type counts:
+2025-02-21 15:24:50,590 - INFO -   None: 1256 (100.0%)
+2025-02-21 15:24:50,590 - INFO - Error node counts:
+2025-02-21 15:24:50,590 - INFO -   None: 1256 (100.0%)
+2025-02-21 15:24:50,590 - INFO - 1.1883959881843⋅sin(x₁)
+2025-02-21 15:24:50,591 - INFO - Using time(s):
+2025-02-21 15:24:50,591 - INFO - 13.695908546447754
+

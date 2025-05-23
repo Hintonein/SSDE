@@ -1,0 +1,715 @@
+
+== EXPERIMENT SETUP START ===========
+Task type            : regression
+Dataset              : data/fdm_vanderpol_sol.csv
+Starting seed        : 500
+Runs                 : 1
+Additional context   :
+      INFO: Replacing config seed 0 with command-line seed 500.
+== EXPERIMENT SETUP END =============
+
+== TRAINING SEED 500 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 64.
+RepeatConstraint: [const] cannot occur more than 2 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, exp, log, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+-- BUILDING PRIOR END ---------------
+
+-- RUNNING ITERATIONS START -------------
+[00:00:00:15.89] Training iteration 1, current best R: 0.9930
+
+	** New best
+	Reward: 0.9930441780546165
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: mul,cos,add,div,-0.9375395251393802,div,add,x1,0.03502519399907703,sub,x1,sub,x1,x1,x1,x1
+	Expression:
+	        ⎛      0.9375395251393802⋅x₁  ⎞
+	  x₁⋅cos⎜x₁ - ────────────────────────⎟
+	        ⎝     x₁ + 0.03502519399907703⎠
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:12.37] Training iteration 3, current best R: 0.9968
+
+	** New best
+	Reward: 0.9967707553244239
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: mul,sin,add,log,div,mul,sub,-1.4602036925314286,exp,mul,add,mul,x1,-0.954051013143218,log,x1,x1,x1,x1,x1,x1
+	Expression:
+	        ⎛        ⎛   x₁⋅(-0.954051013143218⋅x₁ + log(x₁))                     ⎞⎞
+	  x₁⋅sin⎝x₁ + log⎝- ℯ                                     - 1.4602036925314286⎠⎠
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:12.57] Training iteration 10, current best R: 0.9968
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:11.75] Training iteration 18, current best R: 0.9973
+
+	** New best
+	Reward: 0.9973444555301035
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: mul,sub,sin,sub,exp,mul,0.8576256828402953,add,0.7193621854042707,x1,exp,x1,sub,div,x1,div,x1,x1,x1,x1
+	Expression:
+	        ⎛                   0.8576256828402953⋅x₁    x₁⎞
+	  x₁⋅sin⎝1.853254875744324⋅ℯ                      - ℯ  ⎠
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:12.20] Training iteration 20, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:11.07] Training iteration 30, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:12.04] Training iteration 40, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:12.54] Training iteration 50, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:11.57] Training iteration 60, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:11.61] Training iteration 70, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:11.14] Training iteration 80, current best R: 0.9973
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:10.28] Training iteration 89, current best R: 0.9975
+
+	** New best
+	Reward: 0.9975124641322586
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: add,x1,mul,x1,add,x1,log,add,0.765396724230304,mul,x1,-0.3980906055635567
+	Expression:
+	  x₁⋅(x₁ + log(0.765396724230304 - 0.3980906055635567⋅x₁)) + x₁
+
+-- RUNNING ITERATIONS START -------------
+[00:00:00:11.83] Training iteration 90, current best R: 0.9975
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.71] Training iteration 100, current best R: 0.9975
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.09] Training iteration 105, current best R: 0.9983
+
+	** New best
+	Reward: 0.9983331498742252
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: mul,exp,x1,mul,sub,sub,sub,0.7608161651240957,add,x1,x1,mul,-2.6071535162555737,x1,x1,x1
+	Expression:
+	                                                   x₁
+	  x₁⋅(0.7608161651240957 - 0.3928464837444263⋅x₁)⋅ℯ  
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.83] Training iteration 110, current best R: 0.9983
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.55] Training iteration 120, current best R: 0.9983
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.14] Training iteration 130, current best R: 0.9983
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.97] Training iteration 137, current best R: 0.9988
+
+	** New best
+	Reward: 0.9987863240234793
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: add,mul,add,add,mul,x1,-1.5861230253003937,sub,sub,add,add,-0.2547475233483319,x1,add,sin,x1,x1,x1,x1,x1,x1,x1
+	Expression:
+	  x₁⋅(-0.5861230253003937⋅x₁ + sin(x₁) - 0.2547475233483319) + x₁
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.38] Training iteration 140, current best R: 0.9988
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.12] Training iteration 150, current best R: 0.9988
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.01] Training iteration 160, current best R: 0.9988
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.36] Training iteration 170, current best R: 0.9988
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.27] Training iteration 174, current best R: 0.9990
+
+	** New best
+	Reward: 0.9989767694478382
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: mul,cos,x1,mul,sub,-1.243932323664874,sub,x1,x1,div,x1,sub,x1,1.6720954758422213
+	Expression:
+	  -1.243932323664874⋅x₁⋅cos(x₁) 
+	  ──────────────────────────────
+	     x₁ - 1.6720954758422213    
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:06.99] Training iteration 180, current best R: 0.9990
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.10] Training iteration 190, current best R: 0.9990
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.30] Training iteration 200, current best R: 0.9990
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:10.37] Training iteration 210, current best R: 0.9990
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.78] Training iteration 220, current best R: 0.9990
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.02] Training iteration 230, current best R: 0.9990
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.47] Training iteration 237, current best R: 0.9993
+
+	** New best
+	Reward: 0.9993363441168484
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: sub,x1,mul,sub,mul,1.3655435006444747,cos,sub,1.749909488779511,x1,x1,sub,sub,x1,x1,x1
+	Expression:
+	  x₁⋅(-x₁ + 1.3655435006444747⋅cos(x₁ - 1.749909488779511)) + x₁
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.33] Training iteration 240, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.06] Training iteration 250, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.07] Training iteration 260, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.33] Training iteration 270, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.61] Training iteration 280, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.78] Training iteration 290, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.86] Training iteration 300, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.89] Training iteration 310, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.76] Training iteration 320, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.46] Training iteration 330, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.29] Training iteration 340, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.43] Training iteration 350, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.85] Training iteration 360, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.55] Training iteration 370, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.47] Training iteration 380, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.27] Training iteration 390, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.92] Training iteration 400, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.43] Training iteration 410, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.09] Training iteration 420, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.63] Training iteration 430, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.95] Training iteration 440, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.50] Training iteration 450, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.03] Training iteration 460, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:07.30] Training iteration 470, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:08.59] Training iteration 480, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.06] Training iteration 490, current best R: 0.9993
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+[00:00:00:09.40] Training iteration 500, current best R: 0.9993
+Saving Hall of Fame to ./log/data_fdm_vanderpol_sol_2025-03-31-194342/ssde_data_fdm_vanderpol_sol_500_hof.csv
+Saving Pareto Front to ./log/data_fdm_vanderpol_sol_2025-03-31-194342/ssde_data_fdm_vanderpol_sol_500_pf.csv
+== TRAINING SEED 500 END ==============
+INFO: Completed run 1 of 1 in 4503 s
+
+== POST-PROCESS START =================
+-- LOADING LOGS START ----------------
+Successfully loaded summary data
+Successfully loaded Hall of Fame data
+Successfully loaded Pareto Front data
+-- LOADING LOGS END ------------------
+
+-- ANALYZING LOG START --------------
+Task_____________regression
+Source path______./log/data_fdm_vanderpol_sol_2025-03-31-194342
+Runs_____________1
+Max Samples/run__500000
+Success_rate_____0.0
+Hall of Fame (Top 5 of 100)____
+    0: S=500 R=0.999336 <-- x1*(-x1 + 1.3655435006444747*cos(x1 - 1.749909488779511)) + x1
+    1: S=500 R=0.999336 <-- -x1*(x1 - 1.3655434903290427*sin(x1 - 0.17911320389640195)) + x1
+    2: S=500 R=0.999336 <-- x1*(-x1 + 1.3655435007753667*cos(x1 - 1.7499094888103697)) + x1
+    3: S=500 R=0.998977 <-- -1.243932323664874*x1*cos(x1)/(x1 - 1.6720954758422213)
+    4: S=500 R=0.998977 <-- 1.2439318032362532*x1*cos(x1)/(1.672095094013768 - x1)
+  Saving Hall of Fame plot to ./log/data_fdm_vanderpol_sol_2025-03-31-194342/ssde_data_fdm_vanderpol_sol_plot_hof.png
+Pareto Front (5 of 8)____
+    0: S=500 R=0.999336 C=18.00 <-- x1*(-x1 + 1.3655435006444747*cos(x1 - 1.749909488779511)) + x1
+    1: S=500 R=0.999336 C=14.00 <-- -x1*(x1 - 1.3655434903290427*sin(x1 - 0.17911320389640195)) + x1
+    2: S=500 R=0.998786 C=12.00 <-- x1*(-0.586123594809883*x1 + sin(x1) + 0.7452530273719917)
+    3: S=500 R=0.995495 C=10.00 <-- x1*sin(0.7969895178119285*x1 + 0.8061239707141153)
+    4: S=500 R=0.983393 C=8.00 <-- x1*cos(x1 - 0.8603062261215942)
+  Saving Pareto Front plot to ./log/data_fdm_vanderpol_sol_2025-03-31-194342/ssde_data_fdm_vanderpol_sol_plot_pf.png
+-- ANALYZING LOG END ----------------
+== POST-PROCESS END ===================
