@@ -1,0 +1,723 @@
+2025-01-07 22:38:25,304 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-01-07 22:38:25,305 - INFO - -- BUILDING PRIOR START -------------
+2025-01-07 22:38:25,305 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-01-07 22:38:25,305 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 4 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, exp, log, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-01-07 22:38:25,305 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-01-07 22:38:25,306 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-01-07 22:38:25,405 - INFO - WARNING: Entity <bound method MultiRNNCell.call of <tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x7ff969c32710>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiRNNCell.call of <tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x7ff969c32710>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,438 - INFO - WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x7ff969c327d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x7ff969c327d0>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,480 - INFO - WARNING: Entity <bound method Dense.call of <tensorflow.python.layers.core.Dense object at 0x7ff9682ddd10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method Dense.call of <tensorflow.python.layers.core.Dense object at 0x7ff9682ddd10>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,633 - INFO - WARNING: Entity <bound method MultiRNNCell.call of <tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x7ff969c32710>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiRNNCell.call of <tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x7ff969c32710>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,653 - INFO - WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x7ff969c327d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x7ff969c327d0>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,678 - INFO - WARNING: Entity <bound method Dense.call of <tensorflow.python.layers.core.Dense object at 0x7ff96832e750>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method Dense.call of <tensorflow.python.layers.core.Dense object at 0x7ff96832e750>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,810 - INFO - WARNING: Entity <bound method MultiRNNCell.call of <tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x7ff969c32710>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method MultiRNNCell.call of <tensorflow.python.ops.rnn_cell_impl.MultiRNNCell object at 0x7ff969c32710>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,830 - INFO - WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x7ff969c327d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x7ff969c327d0>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:25,855 - INFO - WARNING: Entity <bound method Dense.call of <tensorflow.python.layers.core.Dense object at 0x7ff9587ed6d0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method Dense.call of <tensorflow.python.layers.core.Dense object at 0x7ff9587ed6d0>>: AttributeError: module 'gast' has no attribute 'Index'
+2025-01-07 22:38:26,559 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:38:44,558 - INFO - [00:00:00:18.00] Training iteration 1, current best R: 0.9080
+2025-01-07 22:38:44,559 - INFO - 
+	** New best
+2025-01-07 22:38:44,559 - INFO - 	Reward: 0.9079693687369025
+2025-01-07 22:38:44,559 - INFO - 	Count Off-policy: 0
+2025-01-07 22:38:44,559 - INFO - 	Count On-policy: 1
+2025-01-07 22:38:44,559 - INFO - 	Originally on Policy: True
+2025-01-07 22:38:44,559 - INFO - 	Invalid: False
+2025-01-07 22:38:44,559 - INFO - 	Traversal: sub,1.1689759772046882,div,mul,sin,add,div,x1,0.8961681439853469,1.2323060626254383,cos,x1,add,sin,x1,0.913162770269263
+2025-01-07 22:38:44,559 - INFO - 	Expression:
+2025-01-07 22:38:44,944 - INFO - 	                       sin(1.115862025124998⋅x₁ + 1.2323060626254383)⋅cos(x₁)
+	  1.1689759772046882 - ──────────────────────────────────────────────────────
+	                                    sin(x₁) + 0.913162770269263              
+
+2025-01-07 22:38:44,947 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:39:01,732 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:39:14,348 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:39:31,588 - INFO - [00:00:00:17.24] Training iteration 4, current best R: 0.9223
+2025-01-07 22:39:31,588 - INFO - 
+	** New best
+2025-01-07 22:39:31,588 - INFO - 	Reward: 0.9222528533129872
+2025-01-07 22:39:31,588 - INFO - 	Count Off-policy: 0
+2025-01-07 22:39:31,588 - INFO - 	Count On-policy: 1
+2025-01-07 22:39:31,588 - INFO - 	Originally on Policy: True
+2025-01-07 22:39:31,588 - INFO - 	Invalid: False
+2025-01-07 22:39:31,589 - INFO - 	Traversal: mul,x1,sin,div,sub,add,mul,1.3004522540035803,sub,2.105604945787781,x1,div,x1,exp,x1,-0.04489754385026888,1.196329135278282
+2025-01-07 22:39:31,589 - INFO - 	Expression:
+2025-01-07 22:39:31,633 - INFO - 	        ⎛                                                -x₁                    
+	  x₁⋅sin⎝-1.0870355119296479⋅x₁ + 0.8358903670496888⋅x₁⋅ℯ    + 2.326396774574649
+
+	   ⎞
+	  9⎠
+
+2025-01-07 22:39:31,636 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:39:44,296 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:40:01,967 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:40:17,746 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:40:30,196 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:40:45,119 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:41:00,252 - INFO - [00:00:00:15.13] Training iteration 10, current best R: 0.9223
+2025-01-07 22:41:00,253 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:41:13,973 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:41:31,139 - INFO - [00:00:00:17.17] Training iteration 12, current best R: 0.9830
+2025-01-07 22:41:31,140 - INFO - 
+	** New best
+2025-01-07 22:41:31,140 - INFO - 	Reward: 0.9830179375405774
+2025-01-07 22:41:31,140 - INFO - 	Count Off-policy: 0
+2025-01-07 22:41:31,140 - INFO - 	Count On-policy: 1
+2025-01-07 22:41:31,140 - INFO - 	Originally on Policy: True
+2025-01-07 22:41:31,140 - INFO - 	Invalid: False
+2025-01-07 22:41:31,140 - INFO - 	Traversal: mul,x1,sin,div,log,add,exp,x1,0.9915054,0.79788494
+2025-01-07 22:41:31,140 - INFO - 	Expression:
+2025-01-07 22:41:31,165 - INFO - 	        ⎛                    ⎛ x₁            ⎞⎞
+	  x₁⋅sin⎝1.25331354167432⋅log⎝ℯ   + 0.9915054⎠⎠
+
+2025-01-07 22:41:31,171 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:41:48,541 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:42:01,621 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:42:11,129 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 22:42:15,486 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:42:27,996 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:42:46,101 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:43:03,829 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:43:23,519 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:43:38,287 - INFO - [00:00:00:14.77] Training iteration 20, current best R: 0.9830
+2025-01-07 22:43:38,291 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:43:50,602 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:44:09,324 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:44:24,444 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:44:39,737 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:44:54,240 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:45:12,645 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:45:25,328 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:45:37,281 - INFO - [00:00:00:11.95] Training iteration 28, current best R: 0.9875
+2025-01-07 22:45:37,281 - INFO - 
+	** New best
+2025-01-07 22:45:37,281 - INFO - 	Reward: 0.9875395271276167
+2025-01-07 22:45:37,281 - INFO - 	Count Off-policy: 0
+2025-01-07 22:45:37,281 - INFO - 	Count On-policy: 1
+2025-01-07 22:45:37,281 - INFO - 	Originally on Policy: True
+2025-01-07 22:45:37,281 - INFO - 	Invalid: False
+2025-01-07 22:45:37,281 - INFO - 	Traversal: sub,-0.7429355,sub,x1,add,x1,mul,0.56720936,exp,add,0.27244467,sin,x1
+2025-01-07 22:45:37,282 - INFO - 	Expression:
+2025-01-07 22:45:37,299 - INFO - 	                     sin(x₁)            
+	  0.744842768563399⋅ℯ        - 0.7429355
+
+2025-01-07 22:45:37,303 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:45:50,105 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:46:03,632 - INFO - [00:00:00:13.53] Training iteration 30, current best R: 0.9875
+2025-01-07 22:46:03,634 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:46:18,209 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:46:32,913 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:46:51,038 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:47:03,159 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:47:18,981 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:47:34,996 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:47:49,397 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:48:05,890 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:48:21,704 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:48:38,809 - INFO - [00:00:00:17.10] Training iteration 40, current best R: 0.9875
+2025-01-07 22:48:38,824 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:49:00,982 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:49:15,022 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:49:29,277 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:49:45,469 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:50:01,811 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:50:19,524 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:50:36,514 - INFO - [00:00:00:16.99] Training iteration 47, current best R: 0.9890
+2025-01-07 22:50:36,514 - INFO - 
+	** New best
+2025-01-07 22:50:36,514 - INFO - 	Reward: 0.9889608702589109
+2025-01-07 22:50:36,514 - INFO - 	Count Off-policy: 0
+2025-01-07 22:50:36,514 - INFO - 	Count On-policy: 1
+2025-01-07 22:50:36,514 - INFO - 	Originally on Policy: True
+2025-01-07 22:50:36,514 - INFO - 	Invalid: False
+2025-01-07 22:50:36,514 - INFO - 	Traversal: div,add,-0.9981882,exp,cos,log,mul,10.607009,mul,10.607008,exp,x1,1.3460629
+2025-01-07 22:50:36,514 - INFO - 	Expression:
+2025-01-07 22:50:36,547 - INFO - 	                        ⎛   ⎛                  x₁⎞⎞                    
+	                     cos⎝log⎝112.508629319072⋅ℯ  ⎠⎠                    
+	  0.742907333676606⋅ℯ                               - 0.741561334169451
+
+2025-01-07 22:50:36,556 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:50:49,145 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 22:50:52,434 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:51:09,180 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:51:33,146 - INFO - [00:00:00:23.97] Training iteration 50, current best R: 0.9890
+2025-01-07 22:51:33,168 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:51:53,881 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:52:09,198 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 22:52:13,268 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:52:33,662 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:52:52,482 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:53:11,665 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:53:33,286 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:53:56,895 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:54:17,499 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:54:34,991 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:54:54,126 - INFO - [00:00:00:19.13] Training iteration 60, current best R: 0.9890
+2025-01-07 22:54:54,143 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:55:11,242 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:55:35,466 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:55:58,705 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:56:18,362 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:56:41,924 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:57:12,665 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:57:33,895 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:57:53,819 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:58:16,911 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:58:35,108 - INFO - [00:00:00:18.20] Training iteration 70, current best R: 0.9890
+2025-01-07 22:58:35,112 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:58:55,958 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:59:13,721 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:59:32,066 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 22:59:35,172 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 22:59:58,379 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:00:24,766 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:00:44,311 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:01:04,618 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:01:22,486 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 23:01:30,207 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:01:51,031 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:02:09,408 - INFO - [00:00:00:18.38] Training iteration 80, current best R: 0.9890
+2025-01-07 23:02:09,411 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:02:30,209 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:02:51,806 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:03:16,999 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:03:43,744 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:04:06,793 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:04:30,044 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:04:51,015 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:05:14,389 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:05:38,311 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:05:58,730 - INFO - [00:00:00:20.42] Training iteration 90, current best R: 0.9890
+2025-01-07 23:05:58,734 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:06:25,680 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:06:47,110 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:07:09,943 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:07:31,909 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:07:51,438 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:08:11,880 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:08:36,318 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:09:01,049 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:09:29,943 - INFO - [00:00:00:28.89] Training iteration 99, current best R: 0.9935
+2025-01-07 23:09:29,944 - INFO - 
+	** New best
+2025-01-07 23:09:29,944 - INFO - 	Reward: 0.993452494819061
+2025-01-07 23:09:29,944 - INFO - 	Count Off-policy: 0
+2025-01-07 23:09:29,944 - INFO - 	Count On-policy: 1
+2025-01-07 23:09:29,944 - INFO - 	Originally on Policy: True
+2025-01-07 23:09:29,944 - INFO - 	Invalid: False
+2025-01-07 23:09:29,944 - INFO - 	Traversal: add,mul,exp,sin,div,x1,0.98801327,0.7463042,-0.7436175
+2025-01-07 23:09:29,944 - INFO - 	Expression:
+2025-01-07 23:09:29,952 - INFO - 	             sin(1.01213215486468⋅x₁)            
+	  0.7463042⋅ℯ                         - 0.7436175
+
+2025-01-07 23:09:29,982 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:09:56,523 - INFO - [00:00:00:26.54] Training iteration 100, current best R: 0.9935
+2025-01-07 23:09:56,528 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:10:19,331 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:10:41,343 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:11:07,327 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:11:29,385 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:11:53,347 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:12:14,473 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:12:38,161 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:13:03,067 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:13:26,150 - INFO - [00:00:00:23.08] Training iteration 109, current best R: 0.9952
+2025-01-07 23:13:26,150 - INFO - 
+	** New best
+2025-01-07 23:13:26,150 - INFO - 	Reward: 0.9952160779008632
+2025-01-07 23:13:26,150 - INFO - 	Count Off-policy: 0
+2025-01-07 23:13:26,150 - INFO - 	Count On-policy: 1
+2025-01-07 23:13:26,150 - INFO - 	Originally on Policy: True
+2025-01-07 23:13:26,150 - INFO - 	Invalid: False
+2025-01-07 23:13:26,150 - INFO - 	Traversal: mul,x1,sin,sub,sub,2.5230336,exp,sub,0.37295184,exp,sub,1.2723143,add,0.66945493,sub,sub,x1,x1,x1,x1
+2025-01-07 23:13:26,150 - INFO - 	Expression:
+2025-01-07 23:13:26,169 - INFO - 	         ⎛                                                      x₁⎞
+	         ⎜                                   -1.82733636814824⋅ℯ  ⎟
+	  -x₁⋅sin⎝x₁ - 2.5230336 + 1.45201440913491⋅ℯ                     ⎠
+
+2025-01-07 23:13:26,195 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:13:47,198 - INFO - [00:00:00:21.00] Training iteration 110, current best R: 0.9952
+2025-01-07 23:13:47,201 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:14:12,116 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:14:34,828 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:14:57,576 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:15:20,891 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:15:41,049 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:16:01,424 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:16:24,114 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:16:44,787 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:17:06,827 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 23:17:07,189 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:17:31,039 - INFO - [00:00:00:23.85] Training iteration 120, current best R: 0.9952
+2025-01-07 23:17:31,043 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:17:55,413 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:18:21,728 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:18:42,149 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:19:00,657 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:19:22,479 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:19:41,651 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:20:01,424 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:20:20,637 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:20:41,481 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:20:59,516 - INFO - [00:00:00:18.03] Training iteration 130, current best R: 0.9952
+2025-01-07 23:20:59,559 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:21:22,110 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:21:41,344 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:22:01,436 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:22:20,895 - INFO - /home/weishu/ai4s_test/DSR/DSO/Sympde/dso/dso/task/regression/regression.py:542: RuntimeWarning: overflow encountered in square
+  "neg_smse" :     (lambda y, y_hat : -sum([np.mean((y[i] - y_hat[i])**2) for i in range(len(y))]),
+
+2025-01-07 23:22:20,897 - INFO - /home/weishu/.conda/envs/SymPDE/lib/python3.7/site-packages/scipy/optimize/_numdiff.py:557: RuntimeWarning: invalid value encountered in subtract
+  df = fun(x) - f0
+
+2025-01-07 23:22:29,516 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:22:46,958 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:23:05,764 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:23:25,782 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:23:48,843 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:24:09,453 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:24:27,350 - INFO - [00:00:00:17.90] Training iteration 140, current best R: 0.9952
+2025-01-07 23:24:27,387 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:24:46,029 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:25:02,800 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:25:22,100 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:25:39,104 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:25:54,991 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:26:11,492 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:26:30,419 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:26:46,865 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:27:10,778 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:27:29,078 - INFO - [00:00:00:18.30] Training iteration 150, current best R: 0.9952
+2025-01-07 23:27:29,082 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:27:48,552 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:28:06,273 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:28:23,713 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:28:38,931 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:28:58,153 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:29:14,588 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:29:32,642 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:29:48,163 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:30:10,520 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:30:25,517 - INFO - [00:00:00:15.00] Training iteration 160, current best R: 0.9952
+2025-01-07 23:30:25,520 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:30:40,174 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:30:58,192 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:31:13,502 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:31:27,804 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:31:45,442 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:32:03,951 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:32:20,568 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:32:37,022 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:32:51,208 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:33:05,547 - INFO - [00:00:00:14.34] Training iteration 170, current best R: 0.9952
+2025-01-07 23:33:05,576 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:33:18,917 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:33:38,919 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:33:51,807 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:34:05,168 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:34:18,306 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:34:31,044 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:34:43,455 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:34:57,301 - INFO - [00:00:00:13.85] Training iteration 178, current best R: 0.9983
+2025-01-07 23:34:57,301 - INFO - 
+	** New best
+2025-01-07 23:34:57,301 - INFO - 	Reward: 0.9982939530928053
+2025-01-07 23:34:57,301 - INFO - 	Count Off-policy: 0
+2025-01-07 23:34:57,301 - INFO - 	Count On-policy: 1
+2025-01-07 23:34:57,301 - INFO - 	Originally on Policy: True
+2025-01-07 23:34:57,301 - INFO - 	Invalid: False
+2025-01-07 23:34:57,301 - INFO - 	Traversal: sub,1.3606092,exp,sub,0.6662038,exp,mul,1.5484098,sub,x1,0.6626611
+2025-01-07 23:34:57,301 - INFO - 	Expression:
+2025-01-07 23:34:57,314 - INFO - 	                                                    1.5484098⋅x₁
+	                                -0.358412421127265⋅ℯ            
+	  1.3606092 - 1.94683270850603⋅ℯ                                
+
+2025-01-07 23:34:57,317 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:35:10,554 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:35:22,757 - INFO - [00:00:00:12.20] Training iteration 180, current best R: 0.9983
+2025-01-07 23:35:22,762 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:35:35,921 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:35:51,245 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:36:03,378 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:36:17,826 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:36:30,062 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:36:43,336 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:36:56,469 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:37:09,557 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:37:24,543 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:37:36,559 - INFO - [00:00:00:12.02] Training iteration 190, current best R: 0.9983
+2025-01-07 23:37:36,605 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:37:49,026 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:38:01,937 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:38:13,470 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:38:24,705 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:38:40,745 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:38:51,774 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:39:03,842 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:39:14,762 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:39:26,348 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:39:40,325 - INFO - [00:00:00:13.98] Training iteration 200, current best R: 0.9983
+2025-01-07 23:39:40,380 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:39:53,674 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:40:05,057 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:40:17,732 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:40:33,682 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:40:44,057 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:40:54,826 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:41:07,497 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:41:18,929 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:41:31,081 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:41:42,542 - INFO - [00:00:00:11.46] Training iteration 210, current best R: 0.9983
+2025-01-07 23:41:42,592 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:41:52,223 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:42:03,168 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:42:13,149 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:42:23,934 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:42:34,964 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:42:45,075 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:42:54,481 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:43:04,676 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:43:17,675 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:43:28,028 - INFO - [00:00:00:10.35] Training iteration 220, current best R: 0.9983
+2025-01-07 23:43:28,031 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:43:38,356 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:43:48,686 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:44:01,212 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:44:12,823 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:44:24,094 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:44:33,684 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:44:43,821 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:44:53,694 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:45:03,705 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:45:13,429 - INFO - [00:00:00:09.72] Training iteration 230, current best R: 0.9983
+2025-01-07 23:45:13,436 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:45:27,243 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:45:38,144 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:45:49,571 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:46:01,155 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:46:11,771 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:46:24,242 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:46:33,480 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:46:43,490 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:46:52,875 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:02,950 - INFO - [00:00:00:10.08] Training iteration 240, current best R: 0.9983
+2025-01-07 23:47:03,043 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:11,732 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:20,644 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:29,919 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:38,201 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:46,838 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:47:58,580 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:48:08,548 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:48:20,359 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:48:31,292 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:48:41,204 - INFO - [00:00:00:09.91] Training iteration 250, current best R: 0.9983
+2025-01-07 23:48:41,211 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:48:50,251 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:48:59,844 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:49:10,567 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:49:20,366 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:49:30,812 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:49:40,108 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:49:50,398 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:50:01,936 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:50:12,472 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:50:22,695 - INFO - [00:00:00:10.22] Training iteration 260, current best R: 0.9983
+2025-01-07 23:50:22,790 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:50:33,623 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:50:42,555 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:50:53,440 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:04,920 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:13,464 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:20,748 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:29,744 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:37,761 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:47,255 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:51:58,810 - INFO - [00:00:00:11.56] Training iteration 270, current best R: 0.9983
+2025-01-07 23:51:58,917 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:52:08,588 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:52:18,011 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:52:27,643 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:52:38,267 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:52:51,356 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:52:59,709 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:53:09,572 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:53:21,067 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:53:30,265 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:53:38,746 - INFO - [00:00:00:08.48] Training iteration 280, current best R: 0.9983
+2025-01-07 23:53:38,840 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:53:49,788 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:53:58,653 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:54:06,542 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:54:14,571 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:54:22,085 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:54:33,904 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:54:43,467 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:54:52,966 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:03,575 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:12,115 - INFO - [00:00:00:08.54] Training iteration 290, current best R: 0.9983
+2025-01-07 23:55:12,174 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:20,552 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:28,342 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:37,533 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:46,781 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:55:55,311 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:04,067 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:12,243 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:22,259 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:30,337 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:40,180 - INFO - [00:00:00:09.84] Training iteration 300, current best R: 0.9983
+2025-01-07 23:56:40,250 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:49,419 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:56:58,231 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:57:06,999 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:57:14,783 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:57:23,921 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:57:31,304 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:57:40,232 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:57:49,582 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:02,798 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:10,643 - INFO - [00:00:00:07.85] Training iteration 310, current best R: 0.9983
+2025-01-07 23:58:10,740 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:19,201 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:27,666 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:35,468 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:43,377 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:58:51,259 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:00,910 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:09,900 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:18,276 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:26,580 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:35,658 - INFO - [00:00:00:09.08] Training iteration 320, current best R: 0.9983
+2025-01-07 23:59:35,671 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:44,919 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-07 23:59:54,064 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:03,136 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:11,561 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:22,790 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:30,757 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:38,599 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:48,300 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:00:57,314 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:01:07,695 - INFO - [00:00:00:10.38] Training iteration 330, current best R: 0.9983
+2025-01-08 00:01:07,804 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:01:16,397 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:01:26,962 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:01:36,289 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:01:45,285 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:01:58,496 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:02:07,333 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:02:17,116 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:02:26,407 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:02:36,435 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:02:44,776 - INFO - [00:00:00:08.34] Training iteration 340, current best R: 0.9983
+2025-01-08 00:02:44,820 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:02:54,027 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:03:06,574 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:03:15,223 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:03:25,158 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:03:32,645 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:03:42,236 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:03:51,400 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:01,070 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:10,044 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:19,817 - INFO - [00:00:00:09.77] Training iteration 350, current best R: 0.9983
+2025-01-08 00:04:19,822 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:27,354 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:35,950 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:44,629 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:04:53,676 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:01,061 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:08,805 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:16,917 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:25,513 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:34,002 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:41,519 - INFO - [00:00:00:07.52] Training iteration 360, current best R: 0.9983
+2025-01-08 00:05:41,523 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:48,785 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:05:56,722 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:04,188 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:13,561 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:20,836 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:29,441 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:38,004 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:45,852 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:06:53,644 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:01,394 - INFO - [00:00:00:07.75] Training iteration 370, current best R: 0.9983
+2025-01-08 00:07:01,403 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:09,218 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:17,287 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:24,749 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:32,155 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:39,587 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:48,554 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:07:56,684 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:05,452 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:13,306 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:21,854 - INFO - [00:00:00:08.55] Training iteration 380, current best R: 0.9983
+2025-01-08 00:08:21,961 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:30,741 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:39,398 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:51,058 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:08:59,723 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:07,566 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:16,968 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:26,439 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:34,548 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:41,647 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:49,576 - INFO - [00:00:00:07.93] Training iteration 390, current best R: 0.9983
+2025-01-08 00:09:49,581 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:09:56,963 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:04,466 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:12,992 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:21,611 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:30,813 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:40,291 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:50,701 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:10:59,124 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:08,042 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:15,540 - INFO - [00:00:00:07.50] Training iteration 400, current best R: 0.9983
+2025-01-08 00:11:15,545 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:22,798 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:30,936 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:41,636 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:48,706 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:11:57,383 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:06,499 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:13,833 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:21,487 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:28,949 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:36,436 - INFO - [00:00:00:07.49] Training iteration 410, current best R: 0.9983
+2025-01-08 00:12:36,440 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:46,183 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:12:54,547 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:03,339 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:12,453 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:19,479 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:28,473 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:36,292 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:44,977 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:52,058 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:13:59,187 - INFO - [00:00:00:07.13] Training iteration 420, current best R: 0.9983
+2025-01-08 00:13:59,216 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:06,440 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:17,673 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:27,541 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:35,191 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:42,625 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:49,870 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:14:59,130 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:15:08,247 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:15:16,611 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:15:27,968 - INFO - [00:00:00:11.36] Training iteration 430, current best R: 0.9983
+2025-01-08 00:15:28,080 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:15:37,476 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:15:45,573 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:15:53,798 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:01,999 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:10,590 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:19,278 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:31,388 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:38,797 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:46,168 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:16:53,110 - INFO - [00:00:00:06.94] Training iteration 440, current best R: 0.9983
+2025-01-08 00:16:53,232 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:00,083 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:07,208 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:14,410 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:22,111 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:29,316 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:36,910 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:44,833 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:51,932 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:17:59,734 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:18:06,904 - INFO - [00:00:00:07.17] Training iteration 450, current best R: 0.9983
+2025-01-08 00:18:06,953 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:18:13,826 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:18:23,153 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:18:31,653 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:18:41,062 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:18:50,607 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:00,167 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:08,963 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:18,356 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:28,116 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:34,730 - INFO - [00:00:00:06.61] Training iteration 460, current best R: 0.9983
+2025-01-08 00:19:34,941 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:42,733 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:49,619 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:19:57,152 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:04,407 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:11,207 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:18,640 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:25,821 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:34,052 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:41,446 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:48,809 - INFO - [00:00:00:07.36] Training iteration 470, current best R: 0.9983
+2025-01-08 00:20:48,816 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:20:56,136 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:03,304 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:10,386 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:17,880 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:24,863 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:34,717 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:42,397 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:49,771 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:21:57,849 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:22:05,560 - INFO - [00:00:00:07.71] Training iteration 480, current best R: 0.9983
+2025-01-08 00:22:05,691 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:22:14,372 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:22:24,282 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:22:33,625 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:22:43,326 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:22:51,612 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:01,155 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:10,755 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:18,009 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:26,779 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:36,281 - INFO - [00:00:00:09.50] Training iteration 490, current best R: 0.9983
+2025-01-08 00:23:36,405 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:45,718 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:23:54,823 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:02,726 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:12,647 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:21,095 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:28,859 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:35,917 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:44,186 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:24:53,230 - INFO - -- RUNNING ITERATIONS START -------------
+2025-01-08 00:25:00,902 - INFO - [00:00:00:07.67] Training iteration 500, current best R: 0.9983
+2025-01-08 00:25:03,351 - INFO - Invalid expressions: 119020 of 500000 (23.8%).
+2025-01-08 00:25:03,351 - INFO - Error type counts:
+2025-01-08 00:25:03,351 - INFO -   None: 119020 (100.0%)
+2025-01-08 00:25:03,351 - INFO - Error node counts:
+2025-01-08 00:25:03,351 - INFO -   None: 119020 (100.0%)
+2025-01-08 00:25:03,361 - INFO -                                                   1.5484098⋅x₁
+                              -0.358412421127265⋅ℯ            
+1.3606092 - 1.94683270850603⋅ℯ                                
+2025-01-08 00:25:03,361 - INFO - Using time(s):
+2025-01-08 00:25:03,361 - INFO - 6398.188926458359

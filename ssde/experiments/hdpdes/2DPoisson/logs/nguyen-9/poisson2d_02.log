@@ -1,0 +1,46 @@
+2025-03-19 20:18:23,217 - INFO - The threshold of evaluation is:
+2025-03-19 20:18:23,217 - INFO - 1e-05
+2025-03-19 20:18:23,217 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-03-19 20:18:23,218 - INFO - -- BUILDING PRIOR START -------------
+2025-03-19 20:18:23,218 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'InverseUnaryConstraint' with arguments {}. Reason: There are no inverse unary Token pairs in the Library.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-03-19 20:18:23,218 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-03-19 20:18:23,218 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-03-19 20:18:23,218 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-03-19 20:18:24,728 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 20:18:27,601 - INFO - [00:00:00:02.87] Training iteration 1, current best R: 1.0000
+2025-03-19 20:18:27,601 - INFO - 
+	** New best
+2025-03-19 20:18:27,601 - INFO - 	Reward: 1.0
+2025-03-19 20:18:27,601 - INFO - 	Count Off-policy: 0
+2025-03-19 20:18:27,601 - INFO - 	Count On-policy: 1
+2025-03-19 20:18:27,601 - INFO - 	Originally on Policy: True
+2025-03-19 20:18:27,601 - INFO - 	Invalid: False
+2025-03-19 20:18:27,601 - INFO - 	Traversal: sub,1e-08,sin,mul,sub,sub,add,x2,mul,x2,div,sub,mul,x2,x2,x2,x2,x2,mul,x2,x2,x2
+2025-03-19 20:18:27,601 - INFO - 	Expression:
+2025-03-19 20:18:27,607 - INFO - 	     ⎛  2⎞         
+	  sin⎝x₂ ⎠ + 1.0e-8
+
+2025-03-19 20:18:27,607 - INFO - [00:00:00:02.88] Early stopping criteria met; breaking early.
+2025-03-19 20:18:28,246 - INFO - Invalid expressions: 33 of 500 (6.6%).
+2025-03-19 20:18:28,246 - INFO - Error type counts:
+2025-03-19 20:18:28,246 - INFO -   true_divide: 33 (100.0%)
+2025-03-19 20:18:28,246 - INFO - Error node counts:
+2025-03-19 20:18:28,246 - INFO -   divide: 31 (93.9%)
+2025-03-19 20:18:28,246 - INFO -   invalid: 2 (6.1%)
+2025-03-19 20:18:28,246 - INFO - Time used(s): 5.195158243179321
+2025-03-19 20:18:28,246 - INFO - Identified var x2's parametirc expression:
+2025-03-19 20:18:28,247 - INFO - sin(x2**2) + 1.0e-8
+2025-03-19 20:18:28,247 - INFO - Identified var x2's traversal:
+2025-03-19 20:18:28,247 - INFO - [sub, 1e-08, sin, mul, sub, sub, add, x2, mul, x2, div, sub, mul, x2, x2, x2, x2, x2, mul, x2, x2, x2]

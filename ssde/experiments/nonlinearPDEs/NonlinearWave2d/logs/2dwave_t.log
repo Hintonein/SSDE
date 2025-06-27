@@ -1,0 +1,437 @@
+2025-03-27 11:35:48,055 - INFO - The threshold of evaluation is:
+2025-03-27 11:35:48,055 - INFO - 1e-05
+2025-03-27 11:35:48,065 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-03-27 11:35:48,066 - INFO - -- BUILDING PRIOR START -------------
+2025-03-27 11:35:48,066 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-03-27 11:35:48,066 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 2 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [log, exp, sin, cos, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-03-27 11:35:48,066 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-03-27 11:35:48,066 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-03-27 11:35:49,525 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:35:55,415 - INFO - [00:00:00:05.89] Training iteration 1, current best R: 0.9987
+2025-03-27 11:35:55,415 - INFO - 
+	** New best
+2025-03-27 11:35:55,415 - INFO - 	Reward: 0.9987406813475154
+2025-03-27 11:35:55,415 - INFO - 	Count Off-policy: 0
+2025-03-27 11:35:55,415 - INFO - 	Count On-policy: 1
+2025-03-27 11:35:55,415 - INFO - 	Originally on Policy: True
+2025-03-27 11:35:55,415 - INFO - 	Invalid: False
+2025-03-27 11:35:55,416 - INFO - 	Traversal: add,Nxexpr,div,Nxexpr,exp,add,exp,x1,x1
+2025-03-27 11:35:55,416 - INFO - 	Expression:
+2025-03-27 11:35:55,436 - INFO - 	                 x₁         
+	          -x₁ - ℯ           
+	  Nxexpr⋅ℯ          + Nxexpr
+
+2025-03-27 11:35:55,436 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:35:58,839 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:04,008 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:07,399 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:10,111 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:12,512 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:16,576 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:19,962 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:23,329 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:27,405 - INFO - [00:00:00:04.08] Training iteration 10, current best R: 0.9990
+2025-03-27 11:36:27,405 - INFO - 
+	** New best
+2025-03-27 11:36:27,405 - INFO - 	Reward: 0.9989783480195906
+2025-03-27 11:36:27,405 - INFO - 	Count Off-policy: 0
+2025-03-27 11:36:27,405 - INFO - 	Count On-policy: 1
+2025-03-27 11:36:27,405 - INFO - 	Originally on Policy: True
+2025-03-27 11:36:27,405 - INFO - 	Invalid: False
+2025-03-27 11:36:27,405 - INFO - 	Traversal: sub,Nxexpr,mul,sin,x1,mul,mul,cos,x1,x1,Nxexpr
+2025-03-27 11:36:27,406 - INFO - 	Expression:
+2025-03-27 11:36:27,413 - INFO - 	  -Nxexpr⋅x₁⋅sin(x₁)⋅cos(x₁) + Nxexpr
+
+2025-03-27 11:36:27,413 - INFO - [00:00:00:04.08] Training iteration 10, current best R: 0.9990
+2025-03-27 11:36:27,413 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:30,890 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:33,430 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:36,961 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:39,126 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:42,457 - INFO - [00:00:00:03.33] Training iteration 15, current best R: 0.9998
+2025-03-27 11:36:42,458 - INFO - 
+	** New best
+2025-03-27 11:36:42,458 - INFO - 	Reward: 0.9998177938700148
+2025-03-27 11:36:42,458 - INFO - 	Count Off-policy: 0
+2025-03-27 11:36:42,458 - INFO - 	Count On-policy: 1
+2025-03-27 11:36:42,458 - INFO - 	Originally on Policy: True
+2025-03-27 11:36:42,458 - INFO - 	Invalid: False
+2025-03-27 11:36:42,459 - INFO - 	Traversal: sub,x1,add,Nxexpr,mul,cos,div,x1,exp,exp,mul,x1,x1,mul,Nxexpr,x1
+2025-03-27 11:36:42,459 - INFO - 	Expression:
+2025-03-27 11:36:42,482 - INFO - 	                 ⎛      ⎛  2⎞⎞              
+	                 ⎜      ⎝x₁ ⎠⎟              
+	                 ⎜    -ℯ     ⎟              
+	  - Nxexpr⋅x₁⋅cos⎝x₁⋅ℯ       ⎠ - Nxexpr + x₁
+
+2025-03-27 11:36:42,483 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:46,256 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:52,487 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:36:57,228 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:00,066 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:05,006 - INFO - [00:00:00:04.94] Training iteration 20, current best R: 0.9998
+2025-03-27 11:37:05,008 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:07,962 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:11,890 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:18,042 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:21,780 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:25,889 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:28,998 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:32,305 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:36,539 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:38,689 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:43,758 - INFO - [00:00:00:05.07] Training iteration 30, current best R: 0.9998
+2025-03-27 11:37:43,758 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:47,832 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:51,380 - INFO - [00:00:00:03.55] Training iteration 32, current best R: 0.9998
+2025-03-27 11:37:51,380 - INFO - 
+	** New best
+2025-03-27 11:37:51,380 - INFO - 	Reward: 0.9998329777409799
+2025-03-27 11:37:51,380 - INFO - 	Count Off-policy: 0
+2025-03-27 11:37:51,380 - INFO - 	Count On-policy: 1
+2025-03-27 11:37:51,380 - INFO - 	Originally on Policy: True
+2025-03-27 11:37:51,380 - INFO - 	Invalid: False
+2025-03-27 11:37:51,380 - INFO - 	Traversal: add,x1,sub,add,Nxexpr,x1,mul,x1,Nxexpr
+2025-03-27 11:37:51,380 - INFO - 	Expression:
+2025-03-27 11:37:51,385 - INFO - 	  -Nxexpr⋅x₁ + Nxexpr + 2⋅x₁
+
+2025-03-27 11:37:51,385 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:37:55,280 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:00,132 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:04,022 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:09,221 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:13,950 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:18,661 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:23,268 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:29,251 - INFO - [00:00:00:05.98] Training iteration 40, current best R: 0.9998
+2025-03-27 11:38:29,251 - INFO - 
+	** New best
+2025-03-27 11:38:29,251 - INFO - 	Reward: 0.999838697696038
+2025-03-27 11:38:29,251 - INFO - 	Count Off-policy: 0
+2025-03-27 11:38:29,251 - INFO - 	Count On-policy: 1
+2025-03-27 11:38:29,251 - INFO - 	Originally on Policy: True
+2025-03-27 11:38:29,252 - INFO - 	Invalid: False
+2025-03-27 11:38:29,252 - INFO - 	Traversal: add,Nxexpr,mul,sub,exp,sub,mul,exp,cos,x1,sub,x1,exp,x1,x1,Nxexpr,x1
+2025-03-27 11:38:29,252 - INFO - 	Expression:
+2025-03-27 11:38:29,277 - INFO - 	              ⎛                 ⎛      x₁⎞  cos(x₁)⎞
+	              ⎜           -x₁ + ⎝x₁ - ℯ  ⎠⋅ℯ       ⎟
+	  Nxexpr + x₁⋅⎝-Nxexpr + ℯ                         ⎠
+
+2025-03-27 11:38:29,277 - INFO - [00:00:00:06.01] Training iteration 40, current best R: 0.9998
+2025-03-27 11:38:29,283 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:33,286 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:38,672 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:43,881 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:48,322 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:53,443 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:38:58,950 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:06,963 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:11,783 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:16,339 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:21,726 - INFO - [00:00:00:05.39] Training iteration 50, current best R: 0.9998
+2025-03-27 11:39:21,727 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:29,129 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:33,902 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:39,870 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:46,569 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:39:53,181 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:03,752 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:11,168 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:17,170 - INFO - [00:00:00:06.00] Training iteration 58, current best R: 0.9999
+2025-03-27 11:40:17,171 - INFO - 
+	** New best
+2025-03-27 11:40:17,171 - INFO - 	Reward: 0.9999040495786241
+2025-03-27 11:40:17,171 - INFO - 	Count Off-policy: 0
+2025-03-27 11:40:17,171 - INFO - 	Count On-policy: 1
+2025-03-27 11:40:17,171 - INFO - 	Originally on Policy: True
+2025-03-27 11:40:17,171 - INFO - 	Invalid: False
+2025-03-27 11:40:17,172 - INFO - 	Traversal: sub,Nxexpr,sin,add,sub,mul,x1,Nxexpr,x1,x1
+2025-03-27 11:40:17,172 - INFO - 	Expression:
+2025-03-27 11:40:17,186 - INFO - 	  Nxexpr - sin(Nxexpr⋅x₁)
+
+2025-03-27 11:40:17,189 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:23,734 - INFO - [00:00:00:06.55] Training iteration 59, current best R: 1.0000
+2025-03-27 11:40:23,735 - INFO - 
+	** New best
+2025-03-27 11:40:23,735 - INFO - 	Reward: 0.9999606714421467
+2025-03-27 11:40:23,735 - INFO - 	Count Off-policy: 0
+2025-03-27 11:40:23,735 - INFO - 	Count On-policy: 1
+2025-03-27 11:40:23,735 - INFO - 	Originally on Policy: True
+2025-03-27 11:40:23,735 - INFO - 	Invalid: False
+2025-03-27 11:40:23,736 - INFO - 	Traversal: mul,Nxexpr,exp,mul,Nxexpr,x1
+2025-03-27 11:40:23,736 - INFO - 	Expression:
+2025-03-27 11:40:23,742 - INFO - 	          Nxexpr⋅x₁
+	  Nxexpr⋅ℯ         
+
+2025-03-27 11:40:23,743 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:32,046 - INFO - [00:00:00:08.30] Training iteration 60, current best R: 1.0000
+2025-03-27 11:40:32,051 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:39,649 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:46,972 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:53,792 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:40:59,331 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:07,164 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:16,188 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:24,450 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:32,661 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:39,158 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:47,081 - INFO - [00:00:00:07.92] Training iteration 70, current best R: 1.0000
+2025-03-27 11:41:47,082 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:41:57,320 - INFO - [00:00:00:10.24] Training iteration 71, current best R: 1.0000
+2025-03-27 11:41:57,320 - INFO - 
+	** New best
+2025-03-27 11:41:57,320 - INFO - 	Reward: 0.9999635472680184
+2025-03-27 11:41:57,320 - INFO - 	Count Off-policy: 0
+2025-03-27 11:41:57,321 - INFO - 	Count On-policy: 1
+2025-03-27 11:41:57,321 - INFO - 	Originally on Policy: True
+2025-03-27 11:41:57,321 - INFO - 	Invalid: False
+2025-03-27 11:41:57,321 - INFO - 	Traversal: div,Nxexpr,div,add,x1,Nxexpr,add,add,exp,cos,sub,exp,x1,x1,x1,x1
+2025-03-27 11:41:57,321 - INFO - 	Expression:
+2025-03-27 11:41:57,341 - INFO - 	         ⎛           ⎛      x₁⎞⎞
+	         ⎜        cos⎝x₁ - ℯ  ⎠⎟
+	  Nxexpr⋅⎝2⋅x₁ + ℯ             ⎠
+	  ──────────────────────────────
+	           Nxexpr + x₁          
+
+2025-03-27 11:41:57,344 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:06,526 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:14,797 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:20,562 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:31,391 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:39,937 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:49,971 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:42:59,714 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:43:08,683 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:43:15,867 - INFO - [00:00:00:07.18] Training iteration 80, current best R: 1.0000
+2025-03-27 11:43:15,867 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:43:27,348 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:43:37,656 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:43:50,175 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:43:58,738 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:44:09,082 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:44:18,839 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:44:26,954 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:44:35,404 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:44:47,741 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:44:56,808 - INFO - [00:00:00:09.07] Training iteration 90, current best R: 1.0000
+2025-03-27 11:44:56,812 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:45:06,630 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:45:19,092 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:45:27,755 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:45:39,946 - INFO - [00:00:00:12.19] Training iteration 94, current best R: 1.0000
+2025-03-27 11:45:39,946 - INFO - 
+	** New best
+2025-03-27 11:45:39,946 - INFO - 	Reward: 0.9999650425398144
+2025-03-27 11:45:39,947 - INFO - 	Count Off-policy: 0
+2025-03-27 11:45:39,947 - INFO - 	Count On-policy: 1
+2025-03-27 11:45:39,947 - INFO - 	Originally on Policy: True
+2025-03-27 11:45:39,947 - INFO - 	Invalid: False
+2025-03-27 11:45:39,947 - INFO - 	Traversal: sub,Nxexpr,mul,Nxexpr,add,x1,div,x1,exp,x1
+2025-03-27 11:45:39,947 - INFO - 	Expression:
+2025-03-27 11:45:39,962 - INFO - 	           ⎛         -x₁⎞         
+	  - Nxexpr⋅⎝x₁ + x₁⋅ℯ   ⎠ + Nxexpr
+
+2025-03-27 11:45:39,963 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:45:49,940 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:45:59,057 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:46:09,237 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:46:24,065 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:46:35,972 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:46:44,186 - INFO - [00:00:00:08.21] Training iteration 100, current best R: 1.0000
+2025-03-27 11:46:44,187 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:46:56,215 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:47:08,724 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:47:21,073 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:47:29,870 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:47:39,143 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:47:49,673 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:48:01,112 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:48:13,044 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:48:22,388 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:48:34,037 - INFO - [00:00:00:11.65] Training iteration 110, current best R: 1.0000
+2025-03-27 11:48:34,037 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:48:44,443 - INFO - [00:00:00:10.41] Training iteration 111, current best R: 1.0000
+2025-03-27 11:48:44,443 - INFO - 
+	** New best
+2025-03-27 11:48:44,443 - INFO - 	Reward: 0.9999868844643902
+2025-03-27 11:48:44,443 - INFO - 	Count Off-policy: 0
+2025-03-27 11:48:44,443 - INFO - 	Count On-policy: 1
+2025-03-27 11:48:44,443 - INFO - 	Originally on Policy: True
+2025-03-27 11:48:44,443 - INFO - 	Invalid: False
+2025-03-27 11:48:44,443 - INFO - 	Traversal: div,Nxexpr,exp,mul,0.24842896246753982,sub,x1,sub,x1,sub,add,add,x1,x1,x1,x1
+2025-03-27 11:48:44,443 - INFO - 	Expression:
+2025-03-27 11:48:44,450 - INFO - 	          -0.49685792493507964⋅x₁
+	  Nxexpr⋅ℯ                       
+
+2025-03-27 11:48:44,456 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:48:56,536 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:49:10,702 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:49:23,703 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:49:33,758 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:49:43,623 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:49:54,581 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:50:08,592 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:50:21,325 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:50:31,541 - INFO - [00:00:00:10.22] Training iteration 120, current best R: 1.0000
+2025-03-27 11:50:31,552 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:50:44,712 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:50:54,727 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:51:06,465 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:51:20,674 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:51:32,287 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:51:44,513 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:51:55,908 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:52:08,639 - INFO - [00:00:00:12.73] Training iteration 128, current best R: 1.0000
+2025-03-27 11:52:08,640 - INFO - 
+	** New best
+2025-03-27 11:52:08,640 - INFO - 	Reward: 0.9999916801444332
+2025-03-27 11:52:08,640 - INFO - 	Count Off-policy: 0
+2025-03-27 11:52:08,640 - INFO - 	Count On-policy: 1
+2025-03-27 11:52:08,640 - INFO - 	Originally on Policy: True
+2025-03-27 11:52:08,640 - INFO - 	Invalid: False
+2025-03-27 11:52:08,640 - INFO - 	Traversal: mul,Nxexpr,exp,add,mul,x1,-2.49721598845285,add,x1,x1
+2025-03-27 11:52:08,641 - INFO - 	Expression:
+2025-03-27 11:52:08,656 - INFO - 	          -0.49721598845285⋅x₁
+	  Nxexpr⋅ℯ                    
+
+2025-03-27 11:52:08,657 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:52:21,016 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:52:33,339 - INFO - [00:00:00:12.32] Training iteration 130, current best R: 1.0000
+2025-03-27 11:52:33,357 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:52:48,183 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:53:02,870 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:53:16,041 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:53:26,452 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:53:40,910 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:53:55,048 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:54:09,233 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:54:23,333 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:54:37,867 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:54:51,277 - INFO - [00:00:00:13.41] Training iteration 140, current best R: 1.0000
+2025-03-27 11:54:51,278 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:55:03,566 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:55:17,020 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:55:31,721 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:55:44,607 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:55:57,951 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:56:12,137 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:56:23,256 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:56:36,768 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:56:50,200 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:57:01,107 - INFO - [00:00:00:10.91] Training iteration 150, current best R: 1.0000
+2025-03-27 11:57:01,140 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:57:11,226 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:57:24,363 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:57:37,043 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:57:49,462 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:58:02,922 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:58:14,817 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:58:25,743 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:58:38,595 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:58:52,149 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:59:02,656 - INFO - [00:00:00:10.51] Training iteration 160, current best R: 1.0000
+2025-03-27 11:59:02,656 - INFO - 
+	** New best
+2025-03-27 11:59:02,656 - INFO - 	Reward: 0.9999932842854592
+2025-03-27 11:59:02,656 - INFO - 	Count Off-policy: 0
+2025-03-27 11:59:02,656 - INFO - 	Count On-policy: 1
+2025-03-27 11:59:02,656 - INFO - 	Originally on Policy: True
+2025-03-27 11:59:02,656 - INFO - 	Invalid: False
+2025-03-27 11:59:02,656 - INFO - 	Traversal: mul,Nxexpr,sub,exp,mul,-0.24965413578096282,add,x1,sub,add,x1,x1,x1,sub,x1,x1
+2025-03-27 11:59:02,656 - INFO - 	Expression:
+2025-03-27 11:59:02,665 - INFO - 	          -0.49930827156192564⋅x₁
+	  Nxexpr⋅ℯ                       
+
+2025-03-27 11:59:02,665 - INFO - [00:00:00:10.52] Training iteration 160, current best R: 1.0000
+2025-03-27 11:59:02,679 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:59:15,678 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:59:30,756 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:59:43,146 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 11:59:58,110 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:00:10,004 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:00:23,200 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:00:37,148 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:00:52,085 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:01:04,950 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:01:16,092 - INFO - [00:00:00:11.14] Training iteration 170, current best R: 1.0000
+2025-03-27 12:01:16,108 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:01:31,452 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:01:44,610 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:01:59,914 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:02:14,679 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:02:27,193 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:02:43,128 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:02:57,681 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:03:10,094 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:03:25,837 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:03:38,852 - INFO - [00:00:00:13.01] Training iteration 180, current best R: 1.0000
+2025-03-27 12:03:38,874 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:03:51,609 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:04:07,923 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:04:23,313 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:04:39,712 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:04:53,723 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:05:07,413 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:05:25,711 - INFO - [00:00:00:18.30] Training iteration 187, current best R: 1.0000
+2025-03-27 12:05:25,712 - INFO - 
+	** New best
+2025-03-27 12:05:25,712 - INFO - 	Reward: 0.9999936759987126
+2025-03-27 12:05:25,712 - INFO - 	Count Off-policy: 0
+2025-03-27 12:05:25,712 - INFO - 	Count On-policy: 1
+2025-03-27 12:05:25,712 - INFO - 	Originally on Policy: True
+2025-03-27 12:05:25,712 - INFO - 	Invalid: False
+2025-03-27 12:05:25,712 - INFO - 	Traversal: mul,Nxexpr,exp,mul,-0.16770372500294548,add,x1,add,x1,x1
+2025-03-27 12:05:25,712 - INFO - 	Expression:
+2025-03-27 12:05:25,718 - INFO - 	          -0.50311117500883644⋅x₁
+	  Nxexpr⋅ℯ                       
+
+2025-03-27 12:05:25,736 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:05:39,926 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:05:50,235 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:06:01,238 - INFO - [00:00:00:11.00] Training iteration 190, current best R: 1.0000
+2025-03-27 12:06:01,244 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:06:15,380 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:06:28,696 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:06:40,394 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:06:55,839 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-27 12:07:09,787 - INFO - [00:00:00:13.95] Training iteration 195, current best R: 1.0000
+2025-03-27 12:07:09,788 - INFO - 
+	** New best
+2025-03-27 12:07:09,788 - INFO - 	Reward: 0.9999999221645931
+2025-03-27 12:07:09,788 - INFO - 	Count Off-policy: 0
+2025-03-27 12:07:09,788 - INFO - 	Count On-policy: 1
+2025-03-27 12:07:09,788 - INFO - 	Originally on Policy: True
+2025-03-27 12:07:09,788 - INFO - 	Invalid: False
+2025-03-27 12:07:09,789 - INFO - 	Traversal: mul,Nxexpr,exp,mul,-0.12505854585202503,add,x1,add,sub,x1,x1,add,x1,add,x1,x1
+2025-03-27 12:07:09,789 - INFO - 	Expression:
+2025-03-27 12:07:09,806 - INFO - 	          -0.50023418340810012⋅x₁
+	  Nxexpr⋅ℯ                       
+
+2025-03-27 12:07:09,807 - INFO - [00:00:00:13.97] Early stopping criteria met; breaking early.
+2025-03-27 12:07:10,324 - INFO - Invalid expressions: 46636 of 97500 (47.8%).
+2025-03-27 12:07:10,324 - INFO - Error type counts:
+2025-03-27 12:07:10,324 - INFO -   true_divide: 23118 (49.6%)
+2025-03-27 12:07:10,324 - INFO -   log: 21452 (46.0%)
+2025-03-27 12:07:10,324 - INFO -   exp: 2066 (4.4%)
+2025-03-27 12:07:10,324 - INFO - Error node counts:
+2025-03-27 12:07:10,324 - INFO -   invalid: 13154 (28.2%)
+2025-03-27 12:07:10,324 - INFO -   divide: 31415 (67.4%)
+2025-03-27 12:07:10,324 - INFO -   overflow: 1789 (3.8%)
+2025-03-27 12:07:10,324 - INFO -   underflow: 278 (0.6%)
+2025-03-27 12:07:10,326 - INFO - Time used: 1882.310896396637
+2025-03-27 12:07:10,326 - INFO - Identified var x1's parametirc expression:
+2025-03-27 12:07:10,326 - INFO - Nxexpr*exp(-0.50023418340810012*x1)
+2025-03-27 12:07:10,326 - INFO - Identified var x1's traversal:
+2025-03-27 12:07:10,326 - INFO - [mul, Nxexpr, exp, mul, -0.12505854585202503, add, x1, add, sub, x1, x1, add, x1, add, x1, x1]

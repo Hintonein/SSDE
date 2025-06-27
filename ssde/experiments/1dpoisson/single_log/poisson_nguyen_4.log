@@ -1,0 +1,287 @@
+2025-03-19 11:15:25,311 - INFO - WARNING: logdir not provided. Results will not be saved to file.
+2025-03-19 11:15:25,312 - INFO - -- BUILDING PRIOR START -------------
+2025-03-19 11:15:25,312 - INFO - WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+2025-03-19 11:15:25,312 - INFO - LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 30.
+RepeatConstraint: [const] cannot occur more than 1 times.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+ConstConstraint: [const] cannot be the only unique child of [sin, cos, exp, log, add, sub, mul, div].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+2025-03-19 11:15:25,312 - INFO - -- BUILDING PRIOR END ---------------
+
+2025-03-19 11:15:25,313 - INFO - WARNING: max_length (64) will be overridden by value from LengthConstraint (30).
+2025-03-19 11:15:31,513 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:17:05,379 - INFO - [00:00:01:33.87] Training iteration 1, current best R: 0.4920
+2025-03-19 11:17:05,380 - INFO - 
+	** New best
+2025-03-19 11:17:05,380 - INFO - 	Reward: 0.49195721132253034
+2025-03-19 11:17:05,380 - INFO - 	Count Off-policy: 1
+2025-03-19 11:17:05,380 - INFO - 	Count On-policy: 0
+2025-03-19 11:17:05,380 - INFO - 	Originally on Policy: False
+2025-03-19 11:17:05,380 - INFO - 	Invalid: False
+2025-03-19 11:17:05,380 - INFO - 	Traversal: mul,add,mul,x1,x1,add,0.18443947,x1,exp,mul,x1,x1
+2025-03-19 11:17:05,380 - INFO - 	Expression:
+2025-03-19 11:17:05,778 - INFO - 	                           ⎛  2⎞
+	  ⎛  2                  ⎞  ⎝x₁ ⎠
+	  ⎝x₁  + x₁ + 0.18443947⎠⋅ℯ     
+
+2025-03-19 11:17:05,797 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:18:01,271 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:18:59,841 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:20:13,319 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:21:05,020 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:21:59,661 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:22:48,018 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:23:40,879 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:24:36,509 - INFO - [00:00:00:55.63] Training iteration 9, current best R: 0.5082
+2025-03-19 11:24:36,509 - INFO - 
+	** New best
+2025-03-19 11:24:36,509 - INFO - 	Reward: 0.5082381426114245
+2025-03-19 11:24:36,509 - INFO - 	Count Off-policy: 1
+2025-03-19 11:24:36,509 - INFO - 	Count On-policy: 0
+2025-03-19 11:24:36,509 - INFO - 	Originally on Policy: False
+2025-03-19 11:24:36,509 - INFO - 	Invalid: False
+2025-03-19 11:24:36,509 - INFO - 	Traversal: exp,add,mul,x1,x1,sub,x1,div,add,cos,exp,mul,exp,mul,-0.0808343,x1,x1,x1,exp,sin,x1
+2025-03-19 11:24:36,509 - INFO - 	Expression:
+2025-03-19 11:24:36,552 - INFO - 	              ⎛        ⎛     -0.0808343⋅x₁⎞⎞          
+	     2        ⎜        ⎜ x₁⋅ℯ             ⎟⎟  -sin(x₁)
+	   x₁  + x₁ - ⎝x₁ + cos⎝ℯ                 ⎠⎠⋅ℯ        
+	  ℯ                                                   
+
+2025-03-19 11:24:36,554 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:25:25,868 - INFO - [00:00:00:49.31] Training iteration 10, current best R: 0.5082
+2025-03-19 11:25:25,870 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:26:22,836 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:27:17,980 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:28:10,886 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:28:58,972 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:29:56,003 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:30:53,165 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:31:44,084 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:32:39,631 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:34:13,652 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:35:04,936 - INFO - [00:00:00:51.28] Training iteration 20, current best R: 0.5082
+2025-03-19 11:35:04,937 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:36:05,425 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:36:55,275 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:37:49,212 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:38:43,691 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:39:36,497 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:40:30,418 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:41:23,014 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:42:18,495 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:43:11,352 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:44:09,419 - INFO - [00:00:00:58.07] Training iteration 30, current best R: 0.5082
+2025-03-19 11:44:09,420 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:45:04,188 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:45:57,166 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:46:49,339 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:47:44,080 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:48:33,790 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:49:28,457 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:50:19,832 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:51:09,450 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:51:59,563 - INFO - [00:00:00:50.11] Training iteration 39, current best R: 0.5748
+2025-03-19 11:51:59,563 - INFO - 
+	** New best
+2025-03-19 11:51:59,563 - INFO - 	Reward: 0.574763177560241
+2025-03-19 11:51:59,563 - INFO - 	Count Off-policy: 1
+2025-03-19 11:51:59,563 - INFO - 	Count On-policy: 0
+2025-03-19 11:51:59,563 - INFO - 	Originally on Policy: False
+2025-03-19 11:51:59,563 - INFO - 	Invalid: False
+2025-03-19 11:51:59,563 - INFO - 	Traversal: add,mul,x1,div,div,-0.22339188,exp,x1,cos,x1,mul,add,mul,mul,add,x1,x1,x1,exp,x1,cos,x1,x1
+2025-03-19 11:51:59,563 - INFO - 	Expression:
+2025-03-19 11:51:59,577 - INFO - 	                                            -x₁
+	     ⎛    2  x₁          ⎞   0.22339188⋅x₁⋅ℯ   
+	  x₁⋅⎝2⋅x₁ ⋅ℯ   + cos(x₁)⎠ - ──────────────────
+	                                  cos(x₁)      
+
+2025-03-19 11:51:59,589 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:52:49,084 - INFO - [00:00:00:49.50] Training iteration 40, current best R: 0.5748
+2025-03-19 11:52:49,086 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:53:41,106 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:54:35,163 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:55:23,144 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:56:16,340 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:57:10,765 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:57:59,986 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:58:50,975 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 11:59:43,932 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:00:32,241 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:01:21,874 - INFO - [00:00:00:49.63] Training iteration 50, current best R: 0.5748
+2025-03-19 12:01:21,876 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:02:15,960 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:03:11,928 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:04:06,796 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:04:57,129 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:05:49,390 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:06:49,621 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:07:44,760 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:08:41,044 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:09:31,937 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:10:22,964 - INFO - [00:00:00:51.03] Training iteration 60, current best R: 0.5748
+2025-03-19 12:10:22,966 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:11:14,137 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:12:06,408 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:13:06,325 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:14:09,753 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:15:06,202 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:16:00,054 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:16:54,301 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:18:20,322 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:19:13,057 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:20:05,959 - INFO - [00:00:00:52.90] Training iteration 70, current best R: 0.5748
+2025-03-19 12:20:05,961 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:21:01,681 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:21:58,352 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:22:50,627 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:23:43,703 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:24:34,686 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:25:30,800 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:26:19,160 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:27:11,553 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:28:21,467 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:29:13,767 - INFO - [00:00:00:52.30] Training iteration 80, current best R: 0.5748
+2025-03-19 12:29:13,769 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:30:04,557 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:30:55,876 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:31:46,537 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:32:36,624 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:33:35,542 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:34:36,396 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:35:24,922 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:36:12,929 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:37:02,573 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:37:50,964 - INFO - [00:00:00:48.39] Training iteration 90, current best R: 0.5748
+2025-03-19 12:37:50,967 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:38:39,122 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:39:32,729 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:40:23,638 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:41:13,481 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:42:05,493 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:42:54,402 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:43:46,183 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:44:33,950 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:45:30,052 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:46:21,343 - INFO - [00:00:00:51.29] Training iteration 100, current best R: 0.5748
+2025-03-19 12:46:21,346 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:47:13,652 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:48:01,276 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:48:51,721 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:49:41,824 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:50:29,639 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:51:19,694 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:52:11,153 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:53:02,827 - INFO - [00:00:00:51.67] Training iteration 108, current best R: 0.6268
+2025-03-19 12:53:02,827 - INFO - 
+	** New best
+2025-03-19 12:53:02,827 - INFO - 	Reward: 0.6267509601849918
+2025-03-19 12:53:02,827 - INFO - 	Count Off-policy: 1
+2025-03-19 12:53:02,827 - INFO - 	Count On-policy: 0
+2025-03-19 12:53:02,827 - INFO - 	Originally on Policy: False
+2025-03-19 12:53:02,827 - INFO - 	Invalid: False
+2025-03-19 12:53:02,827 - INFO - 	Traversal: add,mul,x1,add,mul,x1,exp,sub,add,x1,x1,0.6960944,div,x1,div,div,div,sin,x1,x1,x1,x1,x1
+2025-03-19 12:53:02,827 - INFO - 	Expression:
+2025-03-19 12:53:02,841 - INFO - 	     ⎛    4                              ⎞     
+	     ⎜  x₁                           2⋅x₁⎟     
+	  x₁⋅⎜─────── + 0.49852855967383⋅x₁⋅ℯ    ⎟ + x₁
+	     ⎝sin(x₁)                            ⎠     
+
+2025-03-19 12:53:02,858 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:53:54,265 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:54:42,958 - INFO - [00:00:00:48.69] Training iteration 110, current best R: 0.6268
+2025-03-19 12:54:42,961 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:55:37,682 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:56:27,033 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:57:22,837 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:58:13,759 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 12:59:03,442 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:00:05,921 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:01:04,639 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:01:51,484 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:02:46,566 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:03:37,230 - INFO - [00:00:00:50.66] Training iteration 120, current best R: 0.6268
+2025-03-19 13:03:37,234 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:04:27,890 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:05:20,462 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:06:11,330 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:06:59,921 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:07:53,749 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:08:43,725 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:09:31,946 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:10:23,407 - INFO - [00:00:00:51.46] Training iteration 128, current best R: 0.6667
+2025-03-19 13:10:23,407 - INFO - 
+	** New best
+2025-03-19 13:10:23,407 - INFO - 	Reward: 0.6666663010653752
+2025-03-19 13:10:23,407 - INFO - 	Count Off-policy: 1
+2025-03-19 13:10:23,407 - INFO - 	Count On-policy: 0
+2025-03-19 13:10:23,407 - INFO - 	Originally on Policy: False
+2025-03-19 13:10:23,407 - INFO - 	Invalid: False
+2025-03-19 13:10:23,407 - INFO - 	Traversal: add,mul,mul,x1,0.0,x1,mul,add,add,x1,mul,mul,mul,x1,x1,x1,add,mul,x1,x1,x1,mul,add,mul,x1,x1,x1,x1,x1
+2025-03-19 13:10:23,407 - INFO - 	Expression:
+2025-03-19 13:10:23,413 - INFO - 	     ⎛  3 ⎛  2     ⎞      ⎛  2     ⎞     ⎞
+	  x₁⋅⎝x₁ ⋅⎝x₁  + x₁⎠ + x₁⋅⎝x₁  + x₁⎠ + x₁⎠
+
+2025-03-19 13:10:23,418 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:11:19,195 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:12:09,102 - INFO - [00:00:00:49.91] Training iteration 130, current best R: 0.6667
+2025-03-19 13:12:09,105 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:12:58,594 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:13:52,371 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:14:45,298 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:15:35,347 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:16:27,246 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:17:22,039 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:18:14,436 - INFO - [00:00:00:52.40] Training iteration 137, current best R: 0.6695
+2025-03-19 13:18:14,436 - INFO - 
+	** New best
+2025-03-19 13:18:14,436 - INFO - 	Reward: 0.6695451802455913
+2025-03-19 13:18:14,436 - INFO - 	Count Off-policy: 1
+2025-03-19 13:18:14,436 - INFO - 	Count On-policy: 0
+2025-03-19 13:18:14,436 - INFO - 	Originally on Policy: False
+2025-03-19 13:18:14,436 - INFO - 	Invalid: False
+2025-03-19 13:18:14,436 - INFO - 	Traversal: mul,0.7779132,add,add,mul,add,x1,mul,mul,add,add,mul,add,sin,x1,add,mul,x1,x1,x1,x1,x1,x1,x1,x1,x1,x1,x1
+2025-03-19 13:18:14,436 - INFO - 	Expression:
+2025-03-19 13:18:14,449 - INFO - 	               ⎛  2 ⎛   ⎛  2               ⎞       ⎞     ⎞               
+	  0.7779132⋅x₁⋅⎝x₁ ⋅⎝x₁⋅⎝x₁  + x₁ + sin(x₁)⎠ + 2⋅x₁⎠ + x₁⎠ + 1.5558264⋅x₁
+
+2025-03-19 13:18:14,454 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:19:29,398 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:20:25,314 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:21:14,179 - INFO - [00:00:00:48.86] Training iteration 140, current best R: 0.6695
+2025-03-19 13:21:14,182 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:22:07,324 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:22:57,690 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:23:52,858 - INFO - -- RUNNING ITERATIONS START -------------
+2025-03-19 13:24:44,531 - INFO - [00:00:00:51.67] Training iteration 144, current best R: 1.0000
+2025-03-19 13:24:44,531 - INFO - 
+	** New best
+2025-03-19 13:24:44,531 - INFO - 	Reward: 0.9999994194815466
+2025-03-19 13:24:44,531 - INFO - 	Count Off-policy: 1
+2025-03-19 13:24:44,531 - INFO - 	Count On-policy: 0
+2025-03-19 13:24:44,531 - INFO - 	Originally on Policy: False
+2025-03-19 13:24:44,531 - INFO - 	Invalid: False
+2025-03-19 13:24:44,531 - INFO - 	Traversal: mul,1.0,add,x1,mul,add,mul,add,mul,x1,x1,x1,add,x1,mul,mul,x1,x1,x1,x1,x1
+2025-03-19 13:24:44,531 - INFO - 	Expression:
+2025-03-19 13:24:44,538 - INFO - 	         ⎛     ⎛  2     ⎞ ⎛  3     ⎞⎞         
+	  1.0⋅x₁⋅⎝x₁ + ⎝x₁  + x₁⎠⋅⎝x₁  + x₁⎠⎠ + 1.0⋅x₁
+
+2025-03-19 13:24:44,539 - INFO - [00:00:00:51.68] Early stopping criteria met; breaking early.
+2025-03-19 13:24:53,651 - INFO - Invalid expressions: 51657 of 345777 (14.9%).
+2025-03-19 13:24:53,651 - INFO - Error type counts:
+2025-03-19 13:24:53,651 - INFO -   None: 51657 (100.0%)
+2025-03-19 13:24:53,651 - INFO - Error node counts:
+2025-03-19 13:24:53,651 - INFO -   None: 51657 (100.0%)
+2025-03-19 13:24:53,657 - INFO - Using time(s):
+2025-03-19 13:24:53,657 - INFO - 7770.42153096199
+2025-03-19 13:24:53,657 - INFO - Identified parametirc expression:
+2025-03-19 13:24:53,659 - INFO - 1.0*x1*(x1 + (x1**2 + x1)*(x1**3 + x1)) + 1.0*x1
+2025-03-19 13:24:53,659 - INFO - Identified traversal:
+2025-03-19 13:24:53,659 - INFO - [mul, 1.0, add, x1, mul, add, mul, add, mul, x1, x1, x1, add, x1, mul, mul, x1, x1, x1, x1, x1]
