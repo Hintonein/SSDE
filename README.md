@@ -27,12 +27,12 @@ pip install -e ./ssde
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-
-@inproceedings{wei2025closed,
-  title={Closed-form Solutions: A New Perspective on Solving Differential Equations},
-  author={Shu Wei and Yanjie Li and Lina Yu and Weijun Li and Min Wu and Linjun Sun and Jingyi Liu and Hong Qin and Yusong Deng and Jufeng Han and Yan Pang},
-  booktitle={International Conference on Machine Learning},
-  year={2025},
-  organization={PMLR}
+@inproceedings{
+wei2025closedform,
+title={Closed-form Solutions: A New Perspective on Solving Differential Equations},
+author={Shu Wei and Yanjie Li and Lina Yu and Weijun Li and Min Wu and Linjun Sun and Jingyi Liu and Hong Qin and Yusong Deng and Jufeng Han and Yan Pang},
+booktitle={Forty-second International Conference on Machine Learning},
+year={2025},
+url={https://openreview.net/forum?id=AIx21InAn2}
 }
 ```
